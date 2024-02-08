@@ -65,7 +65,7 @@ const App = () => {
   const natsThings = [
     {
       name: "aliens",
-      image: "https://imgs.xkcd.com/comics/aliens.png",  
+      image: "https://imgs.xkcd.com/comics/ufo.png",  
       attributes: ["otherworldly", "spooky", "spacey", "baseball"],
     },
   ]
