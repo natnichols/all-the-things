@@ -3,6 +3,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SillyThings'
 import Landing from './pages/Landing/Landing'
+import WeirdThings from './pages/WeirdThings/WeirdThings'
 
 const App = () => {
   const bensThings = [
@@ -61,6 +62,13 @@ const App = () => {
       attributes: ["efficient", "reusability", "not a taco", "beautiful"],
     },
   ]
+  const natsThings = [
+    {
+      name: "aliens",
+      image: "https://imgs.xkcd.com/comics/aliens.png",  
+      attributes: ["otherworldly", "spooky", "spacey", "baseball"],
+    },
+  ]
 
   return (
     <Routes>
@@ -77,6 +85,10 @@ const App = () => {
       <Route
         path="/the-silly-things"
         element={<SillyThings things={huntersThings} />}
+      />
+      <Route
+        path="/the-weird-things"
+        element={<WeirdThings things={natsThings} />}
       />
     </Routes>
   )
